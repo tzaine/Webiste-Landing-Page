@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Restoran Pak Yoyok — Nasi Goreng &amp; Masakan Khas Indonesia</title>
+  <meta name="description" content="Restoran Pak Yoyok menyajikan Nasi Goreng, Sate Ayam, Ayam Bakar, dan masakan khas Indonesia lainnya. Bahan segar, resep otentik, harga terjangkau.">
+  <meta name="keywords" content="restoran indonesia, nasi goreng, sate ayam, makanan khas indonesia, pak yoyok">
+
+  <!-- Google Fonts: Playfair Display + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR
+       ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+
+      <!-- Logo -->
+      <a href="#beranda" class="navbar-logo">
+        <div class="navbar-logo-icon">
+          <!-- SVG: Stylized flame/wok icon -->
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2C10.5 5.5 7 7 7 10.5C7 13.5 9.2 16 12 16C14.8 16 17 13.5 17 10.5C17 7 13.5 5.5 12 2Z" fill="#FFF8F0" stroke="#FFF8F0" stroke-width="1" stroke-linejoin="round"/>
+            <path d="M12 16V22M8 22H16M5 18H19" stroke="#FFF8F0" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="navbar-logo-text">Pak <span>Yoyok</span></span>
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="navbar-nav" id="navbarNav">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#lokasi">Lokasi</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+
+      <!-- CTA & Mobile Toggle -->
+      <div class="navbar-cta">
+        <a href="#menu" class="btn btn-primary btn-sm">
+          <!-- SVG: Phone icon -->
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          Pesan Sekarang
+        </a>
+
+        <!-- Mobile Hamburger -->
+        <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle menu" onclick="document.getElementById('navbarNav').classList.toggle('active')">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="hero section-padding" id="beranda">
+    <div class="container">
+
+      <!-- Hero Text Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <!-- SVG: Star icon -->
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+          Cita Rasa Nusantara Sejak 1998
+        </div>
+
+        <h1 class="hero-title">
+          Rasakan <span class="highlight">Kelezatan</span> Masakan Indonesia yang Otentik
+        </h1>
+
+        <p class="hero-subtitle">
+          Dari Nasi Goreng legendaris hingga Sate Ayam yang juicy — setiap hidangan
+          dimasak dengan resep turun-temurun dan bahan pilihan terbaik.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">
+            Lihat Menu Kami
+            <!-- SVG: Arrow right -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+          <a href="#tentang" class="btn btn-outline">Cerita Kami</a>
+        </div>
+
+        <!-- Hero Stats -->
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number">25+</div>
+            <div class="hero-stat-label">Tahun Berdiri</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">50K+</div>
+            <div class="hero-stat-label">Pelanggan Puas</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number">30+</div>
+            <div class="hero-stat-label">Menu Pilihan</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="hero-image">
+        <div class="hero-image-main">
+          <img src="images/nasi-goreng.png" alt="Nasi Goreng spesial Pak Yoyok dengan telur mata sapi, kerupuk, dan irisan mentimun segar">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       MENU ANDALAN SECTION
+       ============================================================ -->
+  <section class="menu-section section-padding" id="menu">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="menu-header text-center">
+        <span class="section-label">Menu Andalan</span>
+        <h2 class="section-title">Hidangan Favorit Pelanggan Kami</h2>
+        <p class="section-subtitle">
+          Setiap porsi dibuat fresh to order menggunakan resep rahasia keluarga
+          yang telah disempurnakan selama lebih dari dua dekade.
+        </p>
+      </div>
+
+      <!-- Menu Cards Grid -->
+      <div class="menu-grid">
+
+        <!-- Card 1: Nasi Goreng Spesial -->
+        <div class="menu-card">
+          <div class="menu-card-image">
+            <span class="menu-card-badge">Best Seller</span>
+            <img src="images/nasi-goreng.png" alt="Nasi Goreng Spesial Pak Yoyok dengan telur, kerupuk, dan acar">
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">Nasi Goreng Spesial</h3>
+            <p class="menu-card-desc">Nasi goreng khas dengan bumbu racikan sendiri, telur mata sapi, ayam suwir, dan kerupuk renyah.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price"><span class="currency">Rp </span>25.000</span>
+              <button class="menu-card-order" aria-label="Pesan Nasi Goreng Spesial">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Mie Goreng Jawa -->
+        <div class="menu-card">
+          <div class="menu-card-image">
+            <img src="images/mie-goreng.png" alt="Mie Goreng Jawa dengan taburan bawang goreng dan sayuran segar">
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">Mie Goreng Jawa</h3>
+            <p class="menu-card-desc">Mie kuning digoreng dengan bumbu kecap manis khas Jawa, sayuran segar, dan taburan bawang goreng.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price"><span class="currency">Rp </span>22.000</span>
+              <button class="menu-card-order" aria-label="Pesan Mie Goreng Jawa">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Sate Ayam Madura -->
+        <div class="menu-card">
+          <div class="menu-card-image">
+            <span class="menu-card-badge">Favorit</span>
+            <img src="images/sate-ayam.png" alt="Sate Ayam Madura dengan bumbu kacang dan lontong">
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">Sate Ayam Madura</h3>
+            <p class="menu-card-desc">10 tusuk sate ayam panggang sempurna, disajikan dengan bumbu kacang kental dan lontong hangat.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price"><span class="currency">Rp </span>28.000</span>
+              <button class="menu-card-order" aria-label="Pesan Sate Ayam Madura">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Ayam Bakar Kecap -->
+        <div class="menu-card">
+          <div class="menu-card-image">
+            <img src="images/ayam-bakar.png" alt="Ayam Bakar Kecap di atas daun pisang dengan sambal">
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">Ayam Bakar Kecap</h3>
+            <p class="menu-card-desc">Ayam kampung dimarinasi kecap manis dan rempah, dibakar arang hingga harum menggoda.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price"><span class="currency">Rp </span>30.000</span>
+              <button class="menu-card-order" aria-label="Pesan Ayam Bakar Kecap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5: Soto Ayam Lamongan -->
+        <div class="menu-card">
+          <div class="menu-card-image">
+            <img src="images/soto-ayam.png" alt="Soto Ayam Lamongan dengan kuah kuning dan pelengkap">
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">Soto Ayam Lamongan</h3>
+            <p class="menu-card-desc">Kuah kuning gurih dengan ayam suwir, tauge, seledri, bawang goreng, dan perasan jeruk nipis.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price"><span class="currency">Rp </span>20.000</span>
+              <button class="menu-card-order" aria-label="Pesan Soto Ayam Lamongan">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6: Gado-Gado Jakarta -->
+        <div class="menu-card">
+          <div class="menu-card-image">
+            <span class="menu-card-badge">Sehat</span>
+            <img src="images/gado-gado.png" alt="Gado-Gado Jakarta dengan sayuran segar dan bumbu kacang">
+          </div>
+          <div class="menu-card-body">
+            <h3 class="menu-card-name">Gado-Gado Jakarta</h3>
+            <p class="menu-card-desc">Aneka sayuran segar, tahu, tempe, dan telur rebus disiram bumbu kacang kental yang gurih.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price"><span class="currency">Rp </span>18.000</span>
+              <button class="menu-card-order" aria-label="Pesan Gado-Gado Jakarta">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       KEUNGGULAN / WHY US SECTION
+       ============================================================ -->
+  <section class="why-section section-padding" id="keunggulan">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="why-header text-center">
+        <span class="section-label">Kenapa Pak Yoyok?</span>
+        <h2 class="section-title">Lebih dari Sekadar Tempat Makan</h2>
+        <p class="section-subtitle">
+          Kami tidak hanya menyajikan makanan, tapi pengalaman kuliner Indonesia
+          yang membuat Anda selalu ingin kembali.
+        </p>
+      </div>
+
+      <!-- Why Cards Grid -->
+      <div class="why-grid">
+
+        <!-- Card 1: Bahan Segar -->
+        <div class="why-card">
+          <div class="why-card-icon">
+            <!-- SVG: Leaf/fresh icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66L7 18c3-1 5-2 8-5s3-5 3-5"/>
+              <path d="M17 8c2-2 3-5 3-7-2 0-5 1-7 3"/>
+            </svg>
+          </div>
+          <h3 class="why-card-title">Bahan Segar Setiap Hari</h3>
+          <p class="why-card-text">
+            Sayuran, daging, dan bumbu kami belanja langsung dari pasar tradisional
+            setiap subuh. Tidak ada bahan beku, semuanya segar.
+          </p>
+        </div>
+
+        <!-- Card 2: Resep Otentik -->
+        <div class="why-card">
+          <div class="why-card-icon">
+            <!-- SVG: Book/recipe icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+              <line x1="8" y1="7" x2="16" y2="7"/>
+              <line x1="8" y1="11" x2="13" y2="11"/>
+            </svg>
+          </div>
+          <h3 class="why-card-title">Resep Turun Temurun</h3>
+          <p class="why-card-text">
+            Resep warisan dari Mbah Yoyok sejak 1998, dijaga keasliannya tanpa
+            kompromi. Rasa yang sama yang membuat pelanggan jatuh cinta sejak hari pertama.
+          </p>
+        </div>
+
+        <!-- Card 3: Cepat & Terjangkau -->
+        <div class="why-card">
+          <div class="why-card-icon">
+            <!-- SVG: Clock/fast icon -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3 class="why-card-title">Cepat Saji, Harga Bersahabat</h3>
+          <p class="why-card-text">
+            Pesanan siap dalam 10-15 menit. Porsi besar, rasa mantap, dengan harga
+            yang ramah untuk kantong mahasiswa hingga keluarga.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TENTANG KAMI / ABOUT SECTION
+       ============================================================ -->
+  <section class="about-section section-padding" id="tentang">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- About Image -->
+        <div class="about-image-wrapper">
+          <img src="images/ayam-bakar.png" alt="Suasana dapur Restoran Pak Yoyok dengan ayam bakar di atas bara" class="about-image">
+        </div>
+
+        <!-- About Content -->
+        <div class="about-content">
+          <span class="section-label">Tentang Kami</span>
+          <h2 class="section-title">Dari Gerobak Kecil ke Meja Makan Anda</h2>
+
+          <p class="about-text">
+            Tahun 1998, Pak Yoyok memulai semuanya dari sebuah gerobak kecil di pinggir
+            Jalan Pahlawan, Surabaya. Bermodal resep Nasi Goreng warisan ibunya dan tekad
+            yang kuat, beliau memasak dari jam 5 sore hingga tengah malam setiap hari.
+          </p>
+
+          <p class="about-text">
+            Hari ini, Restoran Pak Yoyok telah menjadi destinasi kuliner yang dicintai
+            ribuan keluarga. Meski sudah berkembang, satu hal tidak pernah berubah:
+            setiap hidangan tetap dimasak dengan cinta dan bumbu yang sama persis seperti
+            hari pertama.
+          </p>
+
+          <!-- Feature checklist -->
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <!-- SVG: Checkmark -->
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              Bumbu digiling manual setiap hari, bukan bumbu instan
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              Ayam dan daging dari pemasok lokal terpercaya
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+              </div>
+              Tempat makan bersih dengan suasana kekeluargaan
+            </div>
+          </div>
+
+          <a href="#lokasi" class="btn btn-primary">
+            Kunjungi Kami
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       LOKASI & JAM BUKA SECTION
+       ============================================================ -->
+  <section class="location-section section-padding" id="lokasi">
+    <div class="container">
+
+      <!-- Section Header -->
+      <div class="location-header text-center">
+        <span class="section-label">Lokasi &amp; Jam Buka</span>
+        <h2 class="section-title">Temukan Kami di Sini</h2>
+        <p class="section-subtitle">
+          Tersedia juga layanan take-away dan pesan antar melalui ojek online
+          favorit Anda. Datang langsung untuk pengalaman terbaik!
+        </p>
+      </div>
+
+      <!-- Location Grid -->
+      <div class="location-grid">
+
+        <!-- Map Placeholder -->
+        <div class="location-map">
+          <div class="location-map-placeholder">
+            <!-- SVG: Map pin -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <p>Jl. Pahlawan No. 45, Surabaya</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem; opacity: 0.6;">Peta interaktif — segera hadir</p>
+          </div>
+        </div>
+
+        <!-- Location Info Cards -->
+        <div class="location-info" id="kontak">
+
+          <!-- Address Card -->
+          <div class="location-card">
+            <div class="location-card-icon">
+              <!-- SVG: Map pin -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="location-card-title">Alamat</h3>
+              <p class="location-card-text">
+                Jl. Pahlawan No. 45, Kelurahan Alun-Alun Contong,<br>
+                Kec. Bubutan, Kota Surabaya, Jawa Timur 60174
+              </p>
+            </div>
+          </div>
+
+          <!-- Hours Card -->
+          <div class="location-card">
+            <div class="location-card-icon">
+              <!-- SVG: Clock -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="location-card-title">Jam Operasional</h3>
+              <p class="location-card-text">
+                <strong>Senin — Jumat:</strong> 10.00 — 22.00 WIB<br>
+                <strong>Sabtu — Minggu:</strong> 09.00 — 23.00 WIB<br>
+                <strong>Hari Libur Nasional:</strong> 10.00 — 21.00 WIB
+              </p>
+            </div>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="location-card">
+            <div class="location-card-icon">
+              <!-- SVG: Phone -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+            </div>
+            <div>
+              <h3 class="location-card-title">Hubungi Kami</h3>
+              <p class="location-card-text">
+                <strong>Telepon:</strong> (031) 555-7890<br>
+                <strong>WhatsApp:</strong> +62 812-3456-7890<br>
+                <strong>Email:</strong> halo@pakyoyok.id
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+
+      <!-- Footer Grid -->
+      <div class="footer-grid">
+
+        <!-- Brand Column -->
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C10.5 5.5 7 7 7 10.5C7 13.5 9.2 16 12 16C14.8 16 17 13.5 17 10.5C17 7 13.5 5.5 12 2Z" fill="#FFF8F0" stroke="#FFF8F0" stroke-width="1" stroke-linejoin="round"/>
+                <path d="M12 16V22M8 22H16M5 18H19" stroke="#FFF8F0" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="footer-logo-text">Pak <span>Yoyok</span></span>
+          </div>
+          <p class="footer-desc">
+            Menyajikan cita rasa masakan Indonesia otentik sejak 1998. Dari dapur kami
+            untuk keluarga Anda.
+          </p>
+          <!-- Social Media Icons -->
+          <div class="footer-social">
+            <!-- Instagram -->
+            <a href="#" aria-label="Instagram Pak Yoyok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <!-- Facebook -->
+            <a href="#" aria-label="Facebook Pak Yoyok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+              </svg>
+            </a>
+            <!-- TikTok / video icon -->
+            <a href="#" aria-label="TikTok Pak Yoyok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="23 7 16 12 23 17 23 7"/>
+                <rect x="1" y="5" width="15" height="14" rx="2" ry="2"/>
+              </svg>
+            </a>
+            <!-- WhatsApp / message -->
+            <a href="#" aria-label="WhatsApp Pak Yoyok">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer-heading">Navigasi</h4>
+          <div class="footer-links">
+            <a href="#beranda">Beranda</a>
+            <a href="#menu">Menu Kami</a>
+            <a href="#tentang">Tentang Kami</a>
+            <a href="#lokasi">Lokasi</a>
+            <a href="#kontak">Kontak</a>
+          </div>
+        </div>
+
+        <!-- Menu Links -->
+        <div>
+          <h4 class="footer-heading">Menu Populer</h4>
+          <div class="footer-links">
+            <a href="#menu">Nasi Goreng Spesial</a>
+            <a href="#menu">Sate Ayam Madura</a>
+            <a href="#menu">Ayam Bakar Kecap</a>
+            <a href="#menu">Mie Goreng Jawa</a>
+            <a href="#menu">Soto Ayam Lamongan</a>
+            <a href="#menu">Gado-Gado Jakarta</a>
+          </div>
+        </div>
+
+        <!-- Jam Buka Column -->
+        <div>
+          <h4 class="footer-heading">Jam Buka</h4>
+          <div class="footer-hours">
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Senin — Jumat</span>
+              <span class="footer-hours-time">10:00 — 22:00</span>
+            </div>
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Sabtu — Minggu</span>
+              <span class="footer-hours-time">09:00 — 23:00</span>
+            </div>
+            <div class="footer-hours-item">
+              <span class="footer-hours-day">Hari Libur</span>
+              <span class="footer-hours-time">10:00 — 21:00</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Footer Bottom Bar -->
+      <div class="footer-bottom">
+        <p>&copy; 2024 Restoran Pak Yoyok. Hak cipta dilindungi.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Kebijakan Privasi</a>
+          <a href="#">Syarat &amp; Ketentuan</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
